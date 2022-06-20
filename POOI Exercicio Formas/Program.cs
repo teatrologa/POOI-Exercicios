@@ -36,3 +36,5 @@
         }
     }
 }
+
+//Sugestão: inserir as entradas das medidas!
