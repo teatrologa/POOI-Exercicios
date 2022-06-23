@@ -20,8 +20,9 @@ namespace POOI_Exercicio_Financeira
         public virtual void PrintarContrato()
         {
             Console.Clear();
-            Console.WriteLine("\tDados do Contrato");
-            Console.WriteLine("\t-----------------");
+            Console.WriteLine("\tCONTRATO");
+            Console.WriteLine("\t--------");
+            Console.WriteLine("");
             Console.WriteLine("");
         }
     }

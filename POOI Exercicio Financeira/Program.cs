@@ -9,6 +9,7 @@
  * 1.1. ) Herança - Os contratos podem ser contrato de pessoa física e contrato de pessoa jurídica.
  * Os contratos de pessoa física também tem o CPF  e a data de nascimento do contratante.
  * Os contratos de pessoa jurídica possuem o CNPJ e a inscrição estadual da empresa contratante.
+ * 
  * Usando o conceito de herança, crie a classe ContratoPessoaFisica herdando da classe Contrato
  * e com os atributos adicionais do Contrato Pessoa Física.
  * Em seguida, crie a classe ContratoPessoaJuridica herdando da classe Contrato e com os atributos adicionais do Contrato Pessoa Jurídica.
@@ -26,26 +27,54 @@
  * para informar o valor do contrato, o prazo e o valor da prestação.
  * Além disso, os contratos de pessoa física devem informar também a idade do contratante.
  *
+ *
+ *
+ * IDEIA: armazenar todos os contratos em uma lista de objetos.
  */
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using POOI_Exercicio_Financeira;
+
 
 namespace POOI_Exercicio_Financeira
 {
 
-    class Program
+    public class Program
     {
-         void Main(string[] args)
+         static void Main(string[] args)
         {
-
-            var novoContratoPF = new PessoaFisica();
-            novoContratoPF.Contratante = Console.ReadLine();
-            novoContratoPF.CPF = Console.ReadLine();
-            novoContratoPF.Nascimento = DateTime.Parse(Console.ReadLine());
-            novoContratoPF.Valor = Convert.ToDecimal(Console.ReadLine());
-            novoContratoPF.Prazo = Convert.ToInt32(Console.ReadLine());
+            CadastrarContrato cadastrarContrato = new CadastrarContrato();
 
 
-            
-            
+            Console.WriteLine("\tInicie a Criação do Contrato");
+            Console.WriteLine("\t----------------------------");
+            Console.WriteLine(" ");
+
+            Console.WriteLine("\tMenu de opções:");
+            Console.WriteLine("1.\tPessoa Física");
+            Console.WriteLine("2.\tPessoa Juridica");
+
+            int inputMenu = Convert.ToInt32(Console.ReadLine());
+
+            switch (inputMenu)
+            {
+                case 1:
+                    cadastrarContrato.CadastrarContratoPF();
+                    break;
+                
+                case 2:
+                    cadastrarContrato.CadastrarContratoPJ();
+                    break;
+
+                default:
+                    break;
+
+            }
+                
 
         }
     }

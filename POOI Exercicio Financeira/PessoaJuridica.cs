@@ -11,26 +11,26 @@ namespace POOI_Exercicio_Financeira
         public string CNPJ { get; set; }
 
         public string InscricaoEstadual { get; set; }
-        public PessoaJuridica(Guid idContrato, string? contratante, decimal valor, int prazo, string cnpj, string inscricaoEstadual) : base(idContrato, contratante, valor, prazo)
-        {
-            CNPJ = cnpj;
-            InscricaoEstadual = inscricaoEstadual;
-        }
+       
 
         public override void PrintarContrato()
         {
             base.PrintarContrato();
 
-            Console.WriteLine("\tDados do Constratante");
+            Console.WriteLine("Dados do Constratante");
+            Console.WriteLine("---------------------");
             Console.WriteLine("Nome: " + Contratante);
-            Console.WriteLine("CPF: " + CNPJ);
-            Console.WriteLine("Data de Nascimento: " + InscricaoEstadual);
+            Console.WriteLine("CNPJ: " + CNPJ);
+            Console.WriteLine("Inscrição estadual: " + InscricaoEstadual);
+            Console.WriteLine("");
             Console.WriteLine("");
 
-            Console.WriteLine("\tDados do Contrato");
+            Console.WriteLine("Dados do Contrato");
+            Console.WriteLine("-----------------");
             Console.WriteLine("Valor: " + Valor);
             Console.WriteLine("Prazo: " + Prazo);
             Console.WriteLine("ID de Segurança: " + IDContrato);
+            Console.WriteLine("");
         }
     }
 }
