@@ -16,7 +16,10 @@
  * Implemente as classes necessárias para representar os diferentes contratos da Financeira.
 
  * 1.2. ) Polimorfismo - O valor da prestação de um contrato é calculado por um método calcularPrestação(),
- * como sendo o valor do contrato dividido pelo prazo. Este método calcularPrestação() existe para todos os Contratos. Entretanto, para os contratos de pessoa jurídica existe um adicional de 3 reais no valor de cada prestação e para os contratos de pessoa física o valor da prestação também tem um adicional no valor da prestação que deve ser calculado de acordo com a idade do contratante:
+ * como sendo o valor do contrato dividido pelo prazo. Este método calcularPrestação() existe para todos os Contratos.
+ * Entretanto, para os contratos de === pessoa jurídica === existe um adicional de 3 reais no valor de cada prestação e
+ * para os contratos de === pessoa física === o valor da prestação também tem um adicional no valor da prestação que deve
+ * ser calculado de acordo com a idade do contratante:
  * idade <= 30 tem adicional de 1,00
  * idade <= 40 tem adicional de 2,00
  * idade <= 50 tem adicional de 3,00
@@ -27,6 +30,9 @@
  * para informar o valor do contrato, o prazo e o valor da prestação.
  * Além disso, os contratos de pessoa física devem informar também a idade do contratante.
  *
+ *
+ * VALIDAR TODAS AS ENTRADAS
+ * CRIAR METODO DE VALIDAÇÃO**
  *
  *
  * IDEIA: armazenar todos os contratos em uma lista de objetos.

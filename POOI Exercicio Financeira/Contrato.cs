@@ -8,7 +8,7 @@ namespace POOI_Exercicio_Financeira
 {
     public class Contrato
     {
-        public Guid IDContrato { get { return IDContrato = new Guid(); } private set { } }
+        public Guid IDContrato { get { return Guid.NewGuid(); } private set { } }
 
         public string? Contratante { get; set; }
 
@@ -16,12 +16,15 @@ namespace POOI_Exercicio_Financeira
 
         public int Prazo { get; set; }
 
+        public virtual void CalcularPrestação()
+        {        
+        }
 
         public virtual void PrintarContrato()
         {
             Console.Clear();
-            Console.WriteLine("\tCONTRATO");
-            Console.WriteLine("\t--------");
+            Console.WriteLine("CONTRATO");
+            Console.WriteLine("--------");
             Console.WriteLine("");
             Console.WriteLine("");
         }
