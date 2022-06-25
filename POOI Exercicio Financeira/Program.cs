@@ -15,6 +15,7 @@
  * Em seguida, crie a classe ContratoPessoaJuridica herdando da classe Contrato e com os atributos adicionais do Contrato Pessoa Jurídica.
  * Implemente as classes necessárias para representar os diferentes contratos da Financeira.
 
+
  * 1.2. ) Polimorfismo - O valor da prestação de um contrato é calculado por um método calcularPrestação(),
  * como sendo o valor do contrato dividido pelo prazo. Este método calcularPrestação() existe para todos os Contratos.
  * Entretanto, para os contratos de === pessoa jurídica === existe um adicional de 3 reais no valor de cada prestação e
@@ -25,7 +26,8 @@
  * idade <= 50 tem adicional de 3,00
  * idade > 50 tem adicional de 4,00
  * Implemente o método calcularPrestacao() na(s) classe(s) necessárias.
- * 
+
+
  * 1.3 ) Mais métodos - Todos os contratos devem ter um método exibirInfo() ( que não retorna valor e que não tem parâmetros )
  * para informar o valor do contrato, o prazo e o valor da prestação.
  * Além disso, os contratos de pessoa física devem informar também a idade do contratante.
@@ -40,6 +42,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
