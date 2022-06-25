@@ -16,15 +16,31 @@ namespace POOI_Exercicio_Financeira
 
         public int Prazo { get; set; }
 
+
         public virtual void CalcularPrestação()
-        {        
+        {
+            
         }
 
         public virtual void PrintarContrato()
         {
+            
+            Console.WriteLine("Dados do Contrato");
+            Console.WriteLine("-----------------");
+            Console.WriteLine($"Valor: R$ " + Valor);
+            Console.WriteLine("Prazo: " + Prazo + " meses");
+            CalcularPrestação();
+            Console.WriteLine("ID de Segurança: " + IDContrato);
+            Console.WriteLine("");
+
+        }
+
+        public virtual void Header ()
+        {
             Console.Clear();
-            Console.WriteLine("CONTRATO");
-            Console.WriteLine("--------");
+            Console.WriteLine("========================");
+            Console.WriteLine("        CONTRATO        ");
+            Console.WriteLine("========================");
             Console.WriteLine("");
             Console.WriteLine("");
         }

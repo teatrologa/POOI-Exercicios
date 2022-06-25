@@ -17,13 +17,13 @@ namespace POOI_Exercicio_Financeira
         {
             var prestacaoFixa = (Valor / Prazo);
             var prestacaoVariadaPJ = prestacaoFixa + 3.00m;
-            Console.WriteLine("Valor da prestação: " + prestacaoVariadaPJ);
+            Console.WriteLine("Valor da prestação: R$ " + prestacaoVariadaPJ);
         }
 
 
         public override void PrintarContrato()
         {
-            base.PrintarContrato();
+            Console.Clear();
 
             Console.WriteLine("Dados do Constratante");
             Console.WriteLine("---------------------");
@@ -33,13 +33,7 @@ namespace POOI_Exercicio_Financeira
             Console.WriteLine("");
             Console.WriteLine("");
 
-            Console.WriteLine("Dados do Contrato");
-            Console.WriteLine("-----------------");
-            Console.WriteLine("Valor: " + Valor);
-            Console.WriteLine("Prazo: " + Prazo);
-            CalcularPrestação();
-            Console.WriteLine("ID de Segurança: " + IDContrato);
-            Console.WriteLine("");
+            base.PrintarContrato();
         }
     }
 }

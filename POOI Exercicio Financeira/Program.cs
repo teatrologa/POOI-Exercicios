@@ -32,7 +32,7 @@
  *
  *
  * VALIDAR TODAS AS ENTRADAS
- * CRIAR METODO DE VALIDAÇÃO**
+ * CRIAR METODO DE VALIDAÇÃO
  *
  *
  * IDEIA: armazenar todos os contratos em uma lista de objetos.
@@ -64,6 +64,8 @@ namespace POOI_Exercicio_Financeira
             Console.WriteLine("1.\tPessoa Física");
             Console.WriteLine("2.\tPessoa Juridica");
 
+            Console.WriteLine("");
+            Console.Write("Opção desejada: ");
             int inputMenu = Convert.ToInt32(Console.ReadLine());
 
             switch (inputMenu)
